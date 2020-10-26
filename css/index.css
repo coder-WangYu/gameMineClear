@@ -1,0 +1,116 @@
+.container{
+    margin: 20px auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* 按钮区域 */
+.container .game-btns{
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.container .game-btns button{
+    background: rgb(141, 221, 21);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.container .game-btns button:hover{
+    background: rgb(93, 148, 10);
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .game-btns button.selected{
+    background: rgb(93, 148, 10);
+}
+
+/* 棋盘区域 */
+.container .chess-board{
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    display: inline-block;
+}
+
+.container .chess-board table{
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+.container .chess-board table td{
+    width: 20px;
+    height: 20px;
+    border-spacing: 0px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    border: 2px solid;
+    background: #ccc;
+    overflow: hidden;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    font-weight: bold;
+}
+
+.container .chess-board table td.bomb{
+    background-size: 1em;
+    background-image:url('../images/bomb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .chess-board table td.flag{
+    background-size: 2em;
+    background-image:url('../images/flag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .chess-board table td.zero{
+    color: #ccc;
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.one{
+    color: rgb(0, 38, 255);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.two{
+    color: rgb(0, 255, 64);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.three{
+    color: rgb(255, 0, 0);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.four{
+    color: rgb(119, 0, 255);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.five{
+    color: rgb(238, 255, 0);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.six{
+    color: rgb(255, 145, 0);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.seven{
+    color: rgb(255, 0, 191);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+.container .chess-board table td.eight{
+    color: rgba(0, 255, 242, 0.801);
+    border-color: #a1a1a1 #fff #fff #a1a1a1;
+}
+
+/* 描述区域 */
+.container .game-describe{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+}
